@@ -1,5 +1,8 @@
 #!/bin/bash
-#
+# script for preparing the folder structure necessary to
+# feed the islandora batch import module (https://github.com/Islandora/islandora_book_batch)
+# It expects a folder of tif files that are in sequence like pages of a book:
+# (e.g MYBOOK_001.tif, .. ,MYBOOK_345.tif) and it will output the structure as required by the module
 
 if [ -z "$1" ]
   then
