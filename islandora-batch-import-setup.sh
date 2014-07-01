@@ -64,5 +64,8 @@ find *.tif -maxdepth 1 -type f | sort | while IFS= read -r file; do
     done;
 done
 
-echo -e "\nDone.\n"
+echo -e "\nFolder structure completed..\n"
+zip -r $BOOK_NAME.zip $BOOK_NAME
+echo -e "Archive completed..\n"
+echo -e "Done.\n"
 exit 0
