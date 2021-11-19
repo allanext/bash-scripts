@@ -65,7 +65,7 @@ services:
       MYSQL_USER: wikiuser
       MYSQL_PASSWORD: wikipassword
       MYSQL_ROOT_PASSWORD: wikirootpassword
-    restart: always
+    
   redis:
     image: "redis:6.2"
     container_name: redis-wiki
@@ -105,3 +105,4 @@ networks:
      config:
        - subnet: 10.0.1.0/24
          gateway: 10.0.1.1
+         
