@@ -1,5 +1,4 @@
 A few Bash scripts that might eventually be helpful to somebody !
-============
 
 ## aws_replicate_ec2.sh
 
@@ -43,7 +42,7 @@ A few Bash scripts that might eventually be helpful to somebody !
    - Add basic authentication to test sites
    - Cleanup of AMIs
 
-## Docker Compose that fires a MediaWiki container with MariaDB, Redis and Elastic search
+## docker-compose.yml that fires a MediaWiki container with MariaDB, Redis and Elastic search
 
  In front of the Wiki you can use nginx reverse proxy + let's encrypt: 
  https://github.com/evertramos/nginx-proxy-automation
@@ -60,4 +59,3 @@ A few Bash scripts that might eventually be helpful to somebody !
  https://gerrit.wikimedia.org/g/mediawiki/extensions/CirrusSearch/%2B/HEAD/README
  The host needs to set something like:
  sudo sysctl -w vm.max_map_count=262144
- 
