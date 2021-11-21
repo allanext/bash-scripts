@@ -1,6 +1,6 @@
 A few Bash scripts that might eventually be helpful to somebody !
 
-## aws_replicate_ec2.sh
+## [aws_replicate_ec2.sh](https://github.com/allanext/bash-scripts/blob/master/aws_replicate_ec2.sh)
 
  Quick and dirty example on how to clone of a EC2 instance for test purposes.
  There are better ways to test OS changes in production environments, 
@@ -42,7 +42,7 @@ A few Bash scripts that might eventually be helpful to somebody !
    - Add basic authentication to test sites
    - Cleanup of AMIs
 
-## docker-compose.yml that fires a MediaWiki container with MariaDB, Redis and Elastic search
+## [docker-compose.yml](https://github.com/allanext/bash-scripts/blob/master/docker-compose.yml) that fires a MediaWiki container with MariaDB, Redis and Elastic search
 
  In front of the Wiki you can use nginx reverse proxy + let's encrypt: 
  https://github.com/evertramos/nginx-proxy-automation
