@@ -12,6 +12,7 @@
 # Requirements:
 #   - aws cli (brew install aws-cli@2 | https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html#cliv2-linux-install)
 #   - jq (brew install jq | yum install jq) 
+#   - netcat (yum install nc)
 #   - create aws cli profiles (aws configure --profile SRC_PROFILE; aws configure --profile test) 
 #   - in the EC2 instance you'll have to set an ~/.ssh/config entry in order to access the test server. 
 #     You could allocate an elastic IP just for test instances. Example of ~/.ssh/config :
