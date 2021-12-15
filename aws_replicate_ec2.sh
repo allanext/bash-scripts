@@ -239,7 +239,12 @@ ssh -o StrictHostKeyChecking=no $user_at_test_server "/home/ec2-user/elasticsear
 #     chown apache:apache ./$target/.htaccess
  
 echo "Change host name"
-ssh -o StrictHostKeyChecking=no $user_at_test_server "sudo sed -i 's/\.domain\.org/-TEST\.domain\.org/g' /etc/sysconfig/network" > /dev/null 2>&1
+# Amazon Linux 1
+# ssh -o StrictHostKeyChecking=no $user_at_test_server "sudo sed -i 's/\.domain\.org/-TEST\.domain\.org/g' /etc/sysconfig/network" > /dev/null 2>&1
+
+# Amazon Linux 2
+ssh -o StrictHostKeyChecking=no $user_at_test_server "sudo hostnamectl set-hostname TEST\.domain\.org"
+ 
 
 echo "Creating termination script"
 echo "#!/bin/bash" > ./$terminate_script_name
