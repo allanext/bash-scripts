@@ -272,7 +272,8 @@ echo "wait-for-ec2-status terminated" >> ./$terminate_script_name
 for el in $volumes; do 
     echo "aws --profile $aws_profile_dst --region=$region ec2  delete-volume --volume-id $el" >> ./$terminate_script_name
 done
-
+echo 'echo "Deregister AMI"' >> ./$terminate_script_name 
+echo "aws --profile $aws_profile_dst --region=$region ec2 deregister-image --image-id $ami_id" >> ./$terminate_script_name
 chown root:root ./$terminate_script_name
 chmod 700 ./$terminate_script_name
 # End termination script

@@ -40,7 +40,6 @@ A few Bash scripts that might eventually be helpful to somebody !
 
    MISSING:
    - Add basic authentication to test sites
-   - Cleanup of AMIs
 
 ## [islandora-batch-import-setup.sh](https://github.com/allanext/bash-scripts/blob/master/islandora-batch-import-setup.sh)
 
